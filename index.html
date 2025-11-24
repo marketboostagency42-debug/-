@@ -10,43 +10,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    body{
-      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-      background:#0a1128;
-      color:white;
-    }
-    :root{
-      --accent:#0ea5a4;
-      --muted:#d1d5db;
-    }
-    .card{
-      background:rgba(10,17,40,0.8);
-      backdrop-filter:blur(6px);
-      border-radius:1rem;
-      padding:1.5rem;
-      transition:all 0.3s;
-    }
-    .card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 10px 20px rgba(0,0,0,0.5);
-    }
-    .btn{
-      background:var(--accent);
-      color:white;
-      padding:0.75rem 1.5rem;
-      border-radius:0.75rem;
-      font-weight:600;
-      transition:all 0.3s;
-      display:inline-block;
-    }
-    .btn:hover{
-      background:#08a295;
-    }
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:#0a1128;color:white;}
+    :root{--accent:#0ea5a4;--muted:#d1d5db;}
+    .card{background:rgba(10,17,40,0.8);backdrop-filter:blur(6px);border-radius:1rem;padding:1.5rem;transition:all 0.3s;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.5);}
+    .btn{background:var(--accent);color:white;padding:0.75rem 1.5rem;border-radius:0.75rem;font-weight:600;transition:all 0.3s;}
+    .btn:hover{background:#08a295;}
     a{text-decoration:none;color:inherit;}
   </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header class="container mx-auto px-6 py-6 flex items-center justify-between">
     <a href="#hero" class="flex items-center gap-3 text-white font-semibold text-lg">
       <span class="font-bold">MarketBoost Agency</span>
@@ -77,8 +50,8 @@
         </div>
       </div>
       <div class="flex justify-center md:justify-end" data-aos="zoom-in">
-        <!-- hero картинка: используем package-1.png -->
-        <img src="images/package-1.png" alt="Пример инфографики" class="rounded-2xl shadow-xl max-h-80 object-cover" />
+        <!-- hero картинка -->
+        <img src="images/portfolio-13.jpg" alt="Пример инфографики" class="rounded-2xl shadow-xl max-h-80 object-cover" />
       </div>
     </section>
 
@@ -87,24 +60,18 @@
       <h2 class="text-2xl font-bold">Наши услуги</h2>
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="card" data-aos="fade-up">
-          <img src="images/korobka-polubokom.png" alt="Инфографики для отчётов" class="w-full h-32 object-cover rounded-lg mb-3" />
-          <h3 class="font-semibold mb-1">Инфографика для отчётов и презентаций</h3>
-          <p class="text-gray-300 text-sm">Структурируем цифры и факты в наглядные визуальные блоки.</p>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="images/mochalka.png" alt="Посты для соцсетей" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-9.png" alt="Оформление карточек товаров" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold mb-1">Оформление карточек товаров</h3>
-          <p class="text-gray-300 text-sm">Слайды под требования маркетплейсов, фокус на выгоде для клиента.</p>
+          <p class="text-gray-300 text-sm">
+            Слайды и обложки под требования маркетплейсов с фокусом на выгоде для клиента.
+          </p>
         </div>
         <div class="card" data-aos="fade-up">
-          <img src="images/mylo-kitaiskoe.png" alt="Слайды для презентаций" class="w-full h-32 object-cover rounded-lg mb-3" />
-          <h3 class="font-semibold mb-1">Слайды для презентаций</h3>
-          <p class="text-gray-300 text-sm">Чёткая структура, чистый дизайн и акцент на смыслах.</p>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="images/package-4.jpg" alt="Интерактивные схемы" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-10.png" alt="Инфографика под рекламу" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold mb-1">Инфографика под рекламу</h3>
-          <p class="text-gray-300 text-sm">Креативы для промо, баннеров и лендингов.</p>
+          <p class="text-gray-300 text-sm">
+            Креативы для промо, баннеров и лендингов, которые быстро объясняют ключевые преимущества.
+          </p>
         </div>
       </div>
     </section>
@@ -114,36 +81,32 @@
       <h2 class="text-2xl font-bold">Пакеты</h2>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="card" data-aos="fade-up">
-          <img src="images/package-1.png" alt="Rich-контент" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-1.jpg" alt="Rich-контент" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Rich-контент</h3>
           <p class="text-xl font-bold mt-2">2 390 ₽ / блок</p>
           <p class="text-gray-300 mt-2">
             Главный слайд для Rich-контента, где в бесшовном формате отображаются основные преимущества товара.
           </p>
-          <a href="#contact" class="btn mt-4">Заказать</a>
+          <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
-
         <div class="card" data-aos="fade-up">
-          <!-- временно pdf, позже лучше заменить на картинку -->
-          <img src="images/package-2.pdf" alt="Анимированные обложки" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-2.jpg" alt="Анимированные обложки" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Анимированные обложки</h3>
           <p class="text-xl font-bold mt-2">от 4 490 ₽ / обложка</p>
           <p class="text-gray-300 mt-2">
-            Обложка вашего товара в видео-формате с эффектным перечислением всех преимуществ.
+            Обложка товара в видео-формате с эффектным перечислением всех преимуществ.
           </p>
-          <a href="#contact" class="btn mt-4">Заказать</a>
+          <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
-
         <div class="card" data-aos="fade-up">
-          <img src="images/package-3.png" alt="Разработка главного слайда" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-3.jpg" alt="Разработка главного слайда" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Разработка главного слайда</h3>
           <p class="text-xl font-bold mt-2">от 2 390 ₽ / слайд</p>
           <p class="text-gray-300 mt-2">
-            Стильная обложка для вашего товара без дополнительных слайдов — акцент на ключевое преимущество.
+            Стильная обложка для товара без дополнительных слайдов — акцент на ключевое преимущество.
           </p>
-          <a href="#contact" class="btn mt-4">Заказать</a>
+          <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
-
         <div class="card" data-aos="fade-up">
           <img src="images/package-4.jpg" alt="Второстепенный слайд" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Второстепенный слайд</h3>
@@ -151,7 +114,7 @@
           <p class="text-gray-300 mt-2">
             Дополнительные слайды для карточки товара с отображением всех остальных преимуществ.
           </p>
-          <a href="#contact" class="btn mt-4">Заказать</a>
+          <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
       </div>
     </section>
@@ -161,28 +124,27 @@
       <h2 class="text-2xl font-bold">Дополнительные услуги</h2>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="card" data-aos="fade-up">
-          <img src="images/package-5.png" alt="Комплексное сопровождение" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-5.jpg" alt="Комплексное сопровождение на маркетплейсах" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Комплексное сопровождение на маркетплейсах</h3>
           <p class="text-xl font-bold mt-2">от 40 000 ₽</p>
           <p class="text-gray-300 mt-2">
             Полное ведение карточек, аналитика, дизайн, контроль цен, работа с рекламой и продвижением.
           </p>
-          <a href="#contact" class="btn mt-4">Оставить заявку</a>
+          <a href="#contact" class="btn mt-4 inline-block">Оставить заявку</a>
         </div>
-
         <div class="card" data-aos="fade-up">
-          <!-- предметная съёмка: 3 твоих фото -->
-          <div class="grid grid-cols-3 gap-2 mb-3">
-            <img src="images/korobka-polubokom.png" alt="Коробка" class="w-full h-24 object-cover rounded-lg" />
-            <img src="images/mochalka.png" alt="Мочалка" class="w-full h-24 object-cover rounded-lg" />
-            <img src="images/mylo-kitaiskoe.png" alt="Мыло" class="w-full h-24 object-cover rounded-lg" />
+          <div class="grid grid-cols-2 gap-2 mb-3">
+            <img src="images/dsc_1250.jpg" alt="масла" class="w-full h-28 object-cover rounded-lg" />
+            <img src="images/korobka-polubokom.png" alt="коробка" class="w-full h-28 object-cover rounded-lg" />
+            <img src="images/mochalka.png" alt="мочалка" class="w-full h-28 object-cover rounded-lg" />
+            <img src="images/mylo-kitaiskoe.png" alt="мыло" class="w-full h-28 object-cover rounded-lg" />
           </div>
           <h3 class="font-semibold">Предметная съёмка</h3>
           <p class="text-xl font-bold mt-2">от 21 900 ₽</p>
           <p class="text-gray-300 mt-2">
-            Профессиональная предметная съемка товаров для маркетплейсов: свет, композиция, ретушь и подготовка файлов под требования площадок.
+            Профессиональная фотосъёмка товара для маркетплейсов: свет, композиция, ретушь.
           </p>
-          <a href="#contact" class="btn mt-4">Оставить заявку</a>
+          <a href="#contact" class="btn mt-4 inline-block">Оставить заявку</a>
         </div>
       </div>
     </section>
@@ -190,27 +152,24 @@
     <!-- PORTFOLIO -->
     <section id="portfolio" class="mt-16" data-aos="fade-up">
       <h2 class="text-2xl font-bold">Портфолио</h2>
-      <p class="text-gray-300 mt-2 text-sm">
-        Несколько примеров визуала. По запросу можем прислать дополнительные кейсы.
-      </p>
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="card" data-aos="zoom-in">
-          <img src="images/package-1.png" alt="Кейс 1" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-1.jpg" alt="Пример работы 1" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/package-3.png" alt="Кейс 2" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-2.jpg" alt="Пример работы 2" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/package-4.jpg" alt="Кейс 3" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-3.jpg" alt="Пример работы 3" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/korobka-polubokom.png" alt="Кейс 4" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-4.jpg" alt="Пример работы 4" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/mochalka.png" alt="Кейс 5" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-5.jpg" alt="Пример работы 5" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/mylo-kitaiskoe.png" alt="Кейс 6" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-6.jpg" alt="Пример работы 6" class="w-full h-48 object-cover rounded-lg" />
         </div>
       </div>
     </section>
