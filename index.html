@@ -26,6 +26,11 @@
     #mobileMenu a{display:block;margin-bottom:1.5rem;font-size:1.2rem;}
     #menuOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:40;}
   .header-scrolled{background:rgba(5,9,24,0.96);box-shadow:0 10px 25px rgba(0,0,0,0.7);backdrop-filter:blur(10px);}
+      .header-scrolled{background:rgba(5,9,24,0.96);box-shadow:0 10px 25px rgba(0,0,0,0.7);backdrop-filter:blur(10px);} 
+    html{scroll-behavior:smooth;}
+    .back-to-top{position:fixed;bottom:1.5rem;right:1.5rem;width:3rem;height:3rem;border-radius:999px;background:rgba(15,118,110,0.9);color:white;display:none;align-items:center;justify-content:center;font-size:1.4rem;z-index:60;box-shadow:0 10px 25px rgba(0,0,0,0.7);cursor:pointer;}
+    .back-to-top.show{display:flex;}
+    .nav-active{color:var(--accent) !important;}
   </style>
 </head>
 <body>
@@ -200,29 +205,86 @@
     </div>
   </footer>
 
+  <button id="backToTop" class="back-to-top">↑</button>
+
   <script>
   const btn = document.getElementById('menuBtn');
   const menu = document.getElementById('mobileMenu');
   const overlay = document.getElementById('menuOverlay');
   const header = document.getElementById('mainHeader');
+  const backToTop = document.getElementById('backToTop');
+  const navLinks = document.querySelectorAll('header nav a[href^="#"]');
+  const sections = document.querySelectorAll('main section[id]');
 
-  btn.onclick = ()=>{
-    menu.style.display = 'block';
-    overlay.style.display = 'block';
-  };
-
-  overlay.onclick = ()=>{
-    menu.style.display = 'none';
-    overlay.style.display = 'none';
-  };
-
-  window.addEventListener('scroll', ()=>{
-    if(window.scrollY > 20){
-      header.classList.add('header-scrolled');
-    } else {
-      header.classList.remove('header-scrolled');
+  function openMenu(){
+    if(menu && overlay){
+      menu.style.display = 'block';
+      overlay.style.display = 'block';
     }
+  }
+
+  function closeMenu(){
+    if(menu && overlay){
+      menu.style.display = 'none';
+      overlay.style.display = 'none';
+    }
+  }
+
+  if(btn){
+    btn.onclick = openMenu;
+  }
+
+  if(overlay){
+    overlay.onclick = closeMenu;
+  }
+
+  document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
   });
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY || window.pageYOffset;
+
+    if(header){
+      if(y > 20){
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    }
+
+    if(backToTop){
+      if(y > 300){
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    }
+
+    let currentId = null;
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      if(y >= top - 140){
+        currentId = sec.id;
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('nav-active');
+      const href = link.getAttribute('href').slice(1);
+      if(currentId && href === currentId){
+        link.classList.add('nav-active');
+      }
+    });
+  });
+
+  if(backToTop){
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
