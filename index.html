@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Инфографика на заказ — MarketBoost Agency</title>
-  <meta name="description" content="Создание инфографики и rich-контента для маркетплейсов: карточки товаров, анимированные обложки, предметная съемка и комплексное сопровождение." />
+  <meta name="description" content="Создание инфографики и rich-контента для маркетплейсов: карточки товаров, анимированные обложки, предметная съёмка и комплексное сопровождение." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,17 +13,15 @@
     body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:#0a1128;color:white;}
     :root{--accent:#0ea5a4;--muted:#d1d5db;}
     .card{background:rgba(10,17,40,0.8);backdrop-filter:blur(6px);border-radius:1rem;padding:1.5rem;transition:all 0.3s;}
-    .card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.5);}
-    .btn{background:var(--accent);color:white;padding:0.75rem 1.5rem;border-radius:0.75rem;font-weight:600;transition:all 0.3s;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.5);}    
+    .btn{background:var(--accent);color:white;padding:0.75rem 1.5rem;border-radius:0.75rem;font-weight:600;transition:all 0.3s;display:inline-block;}
     .btn:hover{background:#08a295;}
     a{text-decoration:none;color:inherit;}
   </style>
 </head>
 <body>
   <header class="container mx-auto px-6 py-6 flex items-center justify-between">
-    <a href="#hero" class="flex items-center gap-3 text-white font-semibold text-lg">
-      <span class="font-bold">MarketBoost Agency</span>
-    </a>
+    <a href="#hero" class="flex items-center gap-3 text-white font-semibold text-lg"><span class="font-bold">MarketBoost Agency</span></a>
     <nav class="hidden md:flex gap-6 items-center text-sm">
       <a href="#services" class="hover:text-[var(--accent)]">Услуги</a>
       <a href="#packages" class="hover:text-[var(--accent)]">Пакеты</a>
@@ -37,20 +35,14 @@
     <!-- HERO -->
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-          Инфографика и rich-контент<br>
-          <span class="text-[var(--accent)]">для маркетплейсов и презентаций</span>
-        </h1>
-        <p class="mt-4 text-gray-300">
-          Делаем визуал, который продаёт: главные и второстепенные слайды, анимированные обложки, инфографика и предметная съёмка под требования маркетплейсов.
-        </p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Инфографика и rich-контент<br><span class="text-[var(--accent)]">для маркетплейсов и презентаций</span></h1>
+        <p class="mt-4 text-gray-300">Делаем визуал, который продаёт: главные и второстепенные слайды, анимированные обложки, инфографика и предметная съёмка под требования маркетплейсов.</p>
         <div class="mt-6 flex gap-4 flex-wrap">
           <a href="#contact" class="btn">Обсудить задачу</a>
           <a href="#portfolio" class="px-5 py-3 border border-gray-500 rounded-lg hover:border-[var(--accent)]">Смотреть портфолио</a>
         </div>
       </div>
       <div class="flex justify-center md:justify-end" data-aos="zoom-in">
-        <!-- hero картинка -->
         <img src="images/portfolio-13.jpg" alt="Пример инфографики" class="rounded-2xl shadow-xl max-h-80 object-cover" />
       </div>
     </section>
@@ -60,18 +52,14 @@
       <h2 class="text-2xl font-bold">Наши услуги</h2>
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="card" data-aos="fade-up">
-          <img src="images/package-9.png" alt="Оформление карточек товаров" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-9.jpg" alt="Оформление карточек товаров" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold mb-1">Оформление карточек товаров</h3>
-          <p class="text-gray-300 text-sm">
-            Слайды и обложки под требования маркетплейсов с фокусом на выгоде для клиента.
-          </p>
+          <p class="text-gray-300 text-sm">Слайды и обложки под требования маркетплейсов с фокусом на выгоде для клиента.</p>
         </div>
         <div class="card" data-aos="fade-up">
-          <img src="images/package-10.png" alt="Инфографика под рекламу" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-10.jpg" alt="Инфографика под рекламу" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold mb-1">Инфографика под рекламу</h3>
-          <p class="text-gray-300 text-sm">
-            Креативы для промо, баннеров и лендингов, которые быстро объясняют ключевые преимущества.
-          </p>
+          <p class="text-gray-300 text-sm">Креативы для промо, баннеров и лендингов, которые быстро объясняют ключевые преимущества.</p>
         </div>
       </div>
     </section>
@@ -81,39 +69,31 @@
       <h2 class="text-2xl font-bold">Пакеты</h2>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="card" data-aos="fade-up">
-          <img src="images/package-1.jpg" alt="Rich-контент" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-1.png" alt="Rich-контент" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Rich-контент</h3>
           <p class="text-xl font-bold mt-2">2 390 ₽ / блок</p>
-          <p class="text-gray-300 mt-2">
-            Главный слайд для Rich-контента, где в бесшовном формате отображаются основные преимущества товара.
-          </p>
+          <p class="text-gray-300 mt-2">Главный слайд для Rich-контента, где в бесшовном формате отображаются основные преимущества товара.</p>
           <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
         <div class="card" data-aos="fade-up">
           <img src="images/package-2.jpg" alt="Анимированные обложки" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Анимированные обложки</h3>
           <p class="text-xl font-bold mt-2">от 4 490 ₽ / обложка</p>
-          <p class="text-gray-300 mt-2">
-            Обложка товара в видео-формате с эффектным перечислением всех преимуществ.
-          </p>
+          <p class="text-gray-300 mt-2">Обложка товара в видео-формате с эффектным перечислением всех преимуществ.</p>
           <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
         <div class="card" data-aos="fade-up">
-          <img src="images/package-3.jpg" alt="Разработка главного слайда" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-3.png" alt="Разработка главного слайда" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Разработка главного слайда</h3>
           <p class="text-xl font-bold mt-2">от 2 390 ₽ / слайд</p>
-          <p class="text-gray-300 mt-2">
-            Стильная обложка для товара без дополнительных слайдов — акцент на ключевое преимущество.
-          </p>
+          <p class="text-gray-300 mt-2">Стильная обложка для товара без дополнительных слайдов.</p>
           <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
         <div class="card" data-aos="fade-up">
           <img src="images/package-4.jpg" alt="Второстепенный слайд" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Второстепенный слайд</h3>
           <p class="text-xl font-bold mt-2">1 690 ₽ / слайд</p>
-          <p class="text-gray-300 mt-2">
-            Дополнительные слайды для карточки товара с отображением всех остальных преимуществ.
-          </p>
+          <p class="text-gray-300 mt-2">Дополнительные слайды для карточки товара с отображением всех остальных преимуществ.</p>
           <a href="#contact" class="btn mt-4 inline-block">Заказать</a>
         </div>
       </div>
@@ -124,26 +104,22 @@
       <h2 class="text-2xl font-bold">Дополнительные услуги</h2>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="card" data-aos="fade-up">
-          <img src="images/package-5.jpg" alt="Комплексное сопровождение на маркетплейсах" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <img src="images/package-5.png" alt="Комплексное сопровождение на маркетплейсах" class="w-full h-32 object-cover rounded-lg mb-3" />
           <h3 class="font-semibold">Комплексное сопровождение на маркетплейсах</h3>
           <p class="text-xl font-bold mt-2">от 40 000 ₽</p>
-          <p class="text-gray-300 mt-2">
-            Полное ведение карточек, аналитика, дизайн, контроль цен, работа с рекламой и продвижением.
-          </p>
+          <p class="text-gray-300 mt-2">Полное ведение карточек, аналитика, дизайн, контроль цен, работа с рекламой и продвижением.</p>
           <a href="#contact" class="btn mt-4 inline-block">Оставить заявку</a>
         </div>
         <div class="card" data-aos="fade-up">
           <div class="grid grid-cols-2 gap-2 mb-3">
-            <img src="images/dsc_1250.jpg" alt="масла" class="w-full h-28 object-cover rounded-lg" />
+            <img src="images/dsc_1250.jpg.jpg" alt="масла" class="w-full h-28 object-cover rounded-lg" />
             <img src="images/korobka-polubokom.png" alt="коробка" class="w-full h-28 object-cover rounded-lg" />
             <img src="images/mochalka.png" alt="мочалка" class="w-full h-28 object-cover rounded-lg" />
             <img src="images/mylo-kitaiskoe.png" alt="мыло" class="w-full h-28 object-cover rounded-lg" />
           </div>
           <h3 class="font-semibold">Предметная съёмка</h3>
           <p class="text-xl font-bold mt-2">от 21 900 ₽</p>
-          <p class="text-gray-300 mt-2">
-            Профессиональная фотосъёмка товара для маркетплейсов: свет, композиция, ретушь.
-          </p>
+          <p class="text-gray-300 mt-2">Профессиональная фотосъёмка товара для маркетплейсов: свет, композиция, ретушь.</p>
           <a href="#contact" class="btn mt-4 inline-block">Оставить заявку</a>
         </div>
       </div>
@@ -163,33 +139,25 @@
           <img src="images/portfolio-3.jpg" alt="Пример работы 3" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/portfolio-4.jpg" alt="Пример работы 4" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/portfolio-4.png" alt="Пример работы 4" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/portfolio-5.jpg" alt="Пример работы 5" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/package-9.jpg" alt="Пример работы 5" class="w-full h-48 object-cover rounded-lg" />
         </div>
         <div class="card" data-aos="zoom-in">
-          <img src="images/portfolio-6.jpg" alt="Пример работы 6" class="w-full h-48 object-cover rounded-lg" />
+          <img src="images/package-10.jpg" alt="Пример работы 6" class="w-full h-48 object-cover rounded-lg" />
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="mt-16 mb-20" data-aos="fade-up">
-      <h2 class="text-2xl font-bold">Оставить заявку</h2>
-      <p class="text-gray-300 mt-2 text-sm">
-        Опишите задачу, и мы предложим варианты визуала и ориентир по стоимости.
-      </p>
-      <form id="orderForm" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4"
-            method="POST" action="https://formspree.io/f/mnqylkwn">
-        <input name="name" required placeholder="Имя / Компания"
-               class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white" />
-        <input name="email" type="email" required placeholder="Email"
-               class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white" />
-        <input name="phone" placeholder="Телефон (опционально)"
-               class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white" />
-        <select name="type"
-                class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white">
+      <h2 class="text-2xl font-bold">Заказать инфографику</h2>
+      <form id="orderForm" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4" method="POST" action="https://formspree.io/f/mnqylkwn">
+        <input name="name" required placeholder="Имя / Компания" class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white" />
+        <input name="email" type="email" required placeholder="Email" class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white" />
+        <input name="phone" placeholder="Телефон (опционально)" class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white" />
+        <select name="type" class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white">
           <option value="rich">Rich-контент</option>
           <option value="animated">Анимированные обложки</option>
           <option value="main-slide">Главный слайд</option>
@@ -197,17 +165,13 @@
           <option value="photo">Предметная съёмка</option>
           <option value="full-support">Комплексное сопровождение</option>
         </select>
-        <textarea name="brief" rows="4"
-                  placeholder="Краткий бриф: товар, маркетплейсы, задачи, сроки"
-                  class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white md:col-span-2"></textarea>
+        <textarea name="brief" placeholder="Краткий бриф: задача, сроки, аудитория" class="p-3 rounded-md border border-gray-500 bg-[#0a1128] text-white md:col-span-2" rows="4"></textarea>
         <input type="hidden" name="_replyto" value="marketboostagency42@gmail.com">
-        <div class="md:col-span-2 flex flex-wrap gap-4 items-center">
+        <div class="md:col-span-2 flex gap-4">
           <button type="submit" class="btn">Отправить заявку</button>
         </div>
       </form>
-      <p class="mt-3 text-sm text-[var(--accent)]">
-        Почта для связи: <a href="mailto:marketboostagency42@gmail.com">marketboostagency42@gmail.com</a>
-      </p>
+      <p class="mt-3 text-sm text-[var(--accent)]">Почта для связи: <a href="mailto:marketboostagency42@gmail.com" class="text-[var(--accent)]">marketboostagency42@gmail.com</a></p>
     </section>
   </main>
 
